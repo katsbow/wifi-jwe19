@@ -5,8 +5,8 @@
 
   --grey-light: #fefefe;
   --grey-dark: #525252;
-
   --copyright: #696969;
+
 }
 
 @font-face {
@@ -135,27 +135,52 @@ footer .inner-wrapper {
   margin: 0 auto;
 }
 
-footer .footer-top {
-  display: flex;
-}
-
 footer .footer-bottom {
+  font-family: var(--base-font);
+  font-variant: bold;
+  font-size: 14px;
   display: flex;
   color: var(--copyright)
 }
 
 footer .footer-left {
-  flex: 1;
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-bottom:20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom:20px;
   text-align: left;
 }
 
 footer .footer-right {
-  flex: 1;
-  padding-top: 20px;
-  padding-right: 50px;
-  padding-bottom:20px;
-  text-align: right;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom:20px;
+}
+
+@media screen and (min-width: 576px) {
+
+  footer .footer-top {
+    display: flex;
+  }
+
+  footer .footer-right,
+  footer .footer-left {
+    flex: 1;
+  }
+
+  footer .footer-right {
+    text-align: right;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
 }
