@@ -1,0 +1,61 @@
+section.content-element {
+  display: block;
+  position: relative;
+}
+
+.content-element .teaser {
+  position: relative;
+
+  background:
+  -webkit-linear-gradient(rgba(255,125,0,0.5), rgba(255,125,0,0.5)),
+  url(../img/example-content-image.jpg);
+
+  background:
+  linear-gradient(rgba(255,125,0,0.5), rgba(255,125,0,0.5)),
+  url(../img/example-content-image.jpg);
+
+  background-size: cover;
+  min-height: 35vw;
+}
+
+.content-element .teaser p {
+  position: relative;
+  z-index: 10;
+}
+
+.content-element .content-text p{
+  max-width: 45%;
+}
+
+.content-element .content-text img{
+  display: block;
+  margin: 1em 0;
+}
+
+.content-element a.button:hover{
+  opacity: .6;
+}
+
+.content-element a.button{
+  display: inline-block;
+  padding: 1em 2em;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 576px)  {
+
+  .content-element .teaser p,
+  .content-element .content-text p {
+    max-width: 45%;
+  }
+
+}
+
+@media screen and (min-width: 1200px)  {
+  .content-element .teaser {
+    min-height: none;
+    max-height: 40rem;
+  }
+}
