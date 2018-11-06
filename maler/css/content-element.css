@@ -3,6 +3,16 @@ section.content-element {
   position: relative;
 }
 
+.content-element h2.content-header {
+  color: var(--grey-dark);
+  font-family: 'Pridi', sans-serif;
+  font-weight: lighter;
+  font-size: 6.5vw;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  word-break: break-word;
+}
+
 .content-element .teaser {
   position: relative;
 
@@ -27,6 +37,10 @@ section.content-element {
   max-width: 45%;
 }
 
+.content-element img{
+  max-width: 100%;
+}
+
 .content-element .content-text img{
   display: block;
   margin: 1em 0;
@@ -39,12 +53,16 @@ section.content-element {
 .content-element a.button{
   display: inline-block;
   padding: 1em 2em;
-  background: black;
+  background: rgba(253,106,2);
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 576px)  {
+  .content-element h2.content-header{
+    font-size: 3.5em;
+  }
 
   .content-element .teaser p,
   .content-element .content-text p {
@@ -59,3 +77,15 @@ section.content-element {
     max-height: 40rem;
   }
 }
+
+@media screen and (min-width: 1250px)  {
+
+header#main-header h1,
+.content-element > header,
+.content-element .teaser .inner-wrapper,
+.content-element .content-text {
+  padding-left: var(--main-padding);
+  padding-right: var(--main-padding);
+}
+
+  }

@@ -8,6 +8,8 @@
   --grey: #696969;
 
   --font-color-light: var(--grey-dark);
+
+  --main-padding: 1rem;
 }
 
 @font-face {
@@ -57,7 +59,6 @@ html, body {
 body {
   font-family: var(--base-font);
   font-size: 100%;
-  background: orange;
   display: flex;
   flex-flow: column;
   min-height: 100vh;
@@ -79,6 +80,7 @@ html * {
   width: 7em;
   height: 7em;
 }
+
 #logo a {
   display: block;
   width: 100%;
@@ -147,10 +149,18 @@ header#main-header h1 {
   position: absolute;
   left: 0;
   bottom: 0;
-  color: var(--grey-dark);
+  color: var(--grey-light);
   font-family: var(--base-font2);
+  font-weight: lighter;
+  font-size: 52px;
+  line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+section#malermeister p{
+  color: var(--grey-light);
+  font-family: var(--base-font);
 }
 
 main {
@@ -160,6 +170,8 @@ main {
 
 footer {
   background: var(--grey-dark);
+  padding-top: 2rem;
+  margin-top: 2rem;
 }
 
 footer a {
@@ -188,6 +200,7 @@ footer .footer-right {
 footer .footer-bottom {
   color: var(--grey-light);
   opacity: .15;
+  margin: 2rem auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -204,6 +217,7 @@ footer .footer-bottom {
   footer .footer-left,
   footer .footer-right {
     flex: 1;
+    padding-left: var(--main-padding)
   }
 
   footer .footer-right {
@@ -212,11 +226,33 @@ footer .footer-bottom {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1250px) {
+
+  footer .footer-right {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+  }
+
+  footer .footer-left {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+  }
+
+  footer .footer-bottom {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+  }
 
 }
 
 @media screen and (min-width: 992px) {
+
+  #logo {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 5em;
+  }
 
 }
 
