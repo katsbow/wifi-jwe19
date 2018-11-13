@@ -160,6 +160,7 @@ main {
 footer {
   margin-top: 2rem;
   background: var(--grey-dark);
+  padding: var(--main-padding);
 }
 
 footer a {
@@ -184,7 +185,6 @@ footer .footer-bottom {
   color: var(--grey-light);
   opacity: .15;
   margin-top: 2rem;
-  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
 }

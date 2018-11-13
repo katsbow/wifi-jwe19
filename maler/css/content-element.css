@@ -53,14 +53,24 @@ section.content-element {
   opacity: .6;
 }
 
+.label {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+}
+
+.input, .contactform #submit {
+    float: left;
+    height: auto;
+    width: 470px;
+    margin-top: 6px;
+}
+
 .contactform {
-  display: block;
   position: relative;
-  box-sizing: border-box;
-  margin: 0 2rem var(--grey-dark);
   background: var(--grey-dark);
   color: white;
-  resize: vertical;
+  padding: var(--main-padding);
 }
 
 .contactform #submit {
@@ -68,7 +78,15 @@ section.content-element {
   padding: 1em 2em;
   background: orange;
   color: white;
+  text-align: center;
   text-decoration: none;
+  margin-left: 30%;
+}
+
+.contactform textarea {
+  font-family: var(--base-font1);
+  margin-top: 6px;
+  resize: vertical;
 }
 
 .contactform #submit:hover {
