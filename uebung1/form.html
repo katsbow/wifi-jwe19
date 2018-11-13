@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <form action="contactform.html" method="post">
+      <p>
+
+        <label for="female">Frau</label>
+        <input type="radio" name="gender" id="female" value="female">
+
+        <label for="male">Mann</label>
+        <input type="radio" name="gender" id="male" value="male">
+
+        <label for="other">Andere</label>
+        <input type="radio" name="gender" id ="other" value="other">
+
+      </p>
+
+      <p>
+        <label for="firstname">Vorname</label>
+        <input type="text" name="firstname" id="firstname" value="" placeholder="Vorname eingeben">
+      </p>
+
+      <p>
+        <label for="lastname">Nachname</label>
+        <input type="text" name="lastname" id="lastname" value="" placeholder="Nachname eingeben">
+      </p>
+
+      <p>
+        <label for="email">E-Mail</label>
+        <input type="email" name="email" value="" placeholder="yourmail@domain.com">
+      </p>
+
+      <p>
+        <label for="password">Passwort</label>
+        <input type="password" name="password" id="password" value="" placeholder="Passwort eingeben">
+      </p>
+
+      <p>
+        <label for="socks">Wie viele Paar Socken kannst du gleichzeitig tragen?</label>
+        <input type="number" name="socks" id="socks" value="" min="4" max="30" step="2">
+      </p>
+
+      <p>
+        <label for="animalfriend">Welcher Typ Mensch bist du?</label>
+      </p>
+      <p>
+        <select id="animalfriend" name="animalfriend" multiple>
+          <option value="cat">Katzenmensch</option>
+          <option value="dog">Hundemensch</option>
+          <option value="hamster">Hamstermensch</option>
+          <option value="bird">Vogelmensch</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="animalfriend">Welcher Typ Mensch bist du?</label>
+      </p>
+      <p>
+        <select id="animalfriend" name="animalfriend">
+          <option>Katzenmensch</option>
+          <option>Hundemensch</option>
+          <option>Hamstermensch</option>
+          <option>Vogelmensch</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="notes">Wenn du Katzenmensch angegeben hast, wieso?</label>
+      </p>
+      <p>
+        <textarea name="notes" rows="8" cols="80" placeholder="Text eingeben"></textarea>
+      </p>
+
+      <p>
+        <input type="checkbox" name="agb" id="agb" value="ok" required>
+        <label for="checkbox">Ich bin ein Hundemensch.</label>
+      </p>
+
+      <p>
+        <input type="submit" name="submit" id="submit" value="Jetzt abschicken!">
+        <input type="reset" name="reset" value="Alles neu!">
+      </p>
+
+    </form>
+
+  </body>
+</html>

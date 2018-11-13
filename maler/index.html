@@ -107,9 +107,41 @@
         </div>
       </section>
 
-    </main>
+    <div class="contactform">
+      <form action="contactform.html" method="post">
+        <p>
+          <label class="label" for="name">Name:*</label>
+          <input type="text" name="name" class="input" placeholder="Vorname Nachname" required>
+        </p>
 
+        <p>
+          <label class="label" for="company">Firma:</label>
+          <input type="text" name="company" class="input" placeholder="Beispiel GmbH">
+        </p>
 
+        <p>
+          <label class="label" for="email">E-Mail:*</label>
+          <input type="email" name="email" class="input" placeholder="meine@email.com" required>
+        </p>
+
+        <p>
+          <label class="label" for="subject">Betreff:*</label>
+          <input type="text" name="subject" class="input" placeholder="Beratung für einen Fassadensanstrich" required>
+        </p>
+
+        <p>
+          <label class="label" for="notes">Ihr Anliegen:*</label>
+          <textarea name="notes" rows="8" cols="80" placeholder="Schreiben Sie hier Ihren Text" required></textarea>
+        </p>
+
+        <p>
+          <input class="button" type="submit" name="submit" id="submit" value="Absenden">
+        </p>
+
+      </form>
+  </div>
+
+  </main>
   <footer>
     <div class="footer-top inner-wrapper">
       <nav class="footer-left">

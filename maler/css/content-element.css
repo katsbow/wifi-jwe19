@@ -53,6 +53,28 @@ section.content-element {
   opacity: .6;
 }
 
+.contactform {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 2rem var(--grey-dark);
+  background: var(--grey-dark);
+  color: white;
+  resize: vertical;
+}
+
+.contactform #submit {
+  display: inline-block;
+  padding: 1em 2em;
+  background: orange;
+  color: white;
+  text-decoration: none;
+}
+
+.contactform #submit:hover {
+  opacity: .6;
+}
+
 @media screen and (min-width: 576px)  {
 
   .content-element h2.content-header {
@@ -77,7 +99,6 @@ section.content-element {
     height: 100%;
     z-index: -1;
   }
-
 }
 
 @media screen and (max-width: 1250px) {
@@ -97,6 +118,15 @@ section.content-element {
   .content-element .teaser {
     min-height: none;
     max-height: 40rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .label, .input, .contactform #submit {
+      width: 100%;
+      margin-top: 0;
   }
 
 }
