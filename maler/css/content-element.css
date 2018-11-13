@@ -71,6 +71,7 @@ section.content-element {
   background: var(--grey-dark);
   color: white;
   padding: var(--main-padding);
+  padding-bottom: 75px;
 }
 
 .contactform #submit {
@@ -87,6 +88,7 @@ section.content-element {
   font-family: var(--base-font1);
   margin-top: 6px;
   resize: vertical;
+  width: 470px;
 }
 
 .contactform #submit:hover {
