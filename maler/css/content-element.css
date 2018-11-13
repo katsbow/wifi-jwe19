@@ -59,9 +59,9 @@ section.content-element {
     margin-top: 6px;
 }
 
-.input, .contactform #submit {
+form .input, .contactform #submit {
     float: left;
-    height: auto;
+    height: 30px;
     width: 470px;
     margin-top: 6px;
 }
@@ -70,13 +70,16 @@ section.content-element {
   position: relative;
   background: var(--grey-dark);
   color: white;
-  padding: var(--main-padding);
+  padding-left: var(--main-padding);
+  padding-right: var(--main-padding);
+  padding-top: 10px;
   padding-bottom: 75px;
+  cursor: pointer;
 }
 
 .contactform #submit {
   display: inline-block;
-  padding: 1em 2em;
+  padding: 7px;
   background: orange;
   color: white;
   text-align: center;
@@ -126,7 +129,7 @@ section.content-element {
   header#main-header h1,
   .content-element > header,
   .content-element .teaser .inner-wrapper,
-  .content-element .content-text {
+  .content-element .content-text  {
     padding-left: var(--main-padding);
     padding-right: var(--main-padding);
   }
@@ -142,7 +145,7 @@ section.content-element {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
 
   .label, .input, .contactform #submit {
       width: 100%;
