@@ -1,0 +1,29 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+.grid-item1,
+.grid-item2,
+.grid-item3 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 18px;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:hover {
+  color: red;
+}
