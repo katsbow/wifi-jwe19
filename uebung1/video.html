@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Video</title>
+    <link rel="stylesheet" href="css/video.css">
+  </head>
+  <body>
+    <!-- Wenn nur ein Video eingebunden wird
+    <video src="media/BigBuckBunny_320x180.mp4" autoplay loop controls></video> -->
+
+    <!-- Bei Verwendung mehrerer Videos mit verschiedenen Auflösungen -->
+
+    <video autoplay loop controls>
+      <source src="media/BigBuckBunny_320x180.mp4" type="video/mp4" media="screen and (min-width: 321px)">
+      <source src="media/big_buck_bunny_480p_stereo.ogg" type="video/ogg" media="screen and (max-width: 320px)">
+
+    </video>
+
+
+  </body>
+</html>

@@ -1,0 +1,80 @@
+/* Grid CSS */
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'Header Header Header Header Header Header'
+    'Menu Main Main Main Right Right'
+    'Menu Footer Footer Footer Footer Footer';
+
+  /* Alternative Lösung
+  grid-template-columns: repeat(4, 1fr) repeat(2, 100px);
+
+  repeat(4, 1fr): Teilt 1 Teil auf vier gleichgroße Teile auf
+  repeat(2, 100px): 2 Teile bleiben immer gleich (gemeinsam 100px)
+  */
+
+  grid-gap: 10px;
+  background-color: orange;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(0,0,0,0.3);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item-1 {
+  grid-area: Header;
+}
+
+.item-2 {
+  grid-area: Menu;
+}
+
+.item-3 {
+  grid-area: Main;
+}
+
+.item-4 {
+  grid-area: Right;
+}
+
+.item-5 {
+  grid-area: Footer;
+}
+
+/* Inline Grid CSS */
+
+.inline-grid-container {
+  background-color: coral;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border: 1px solid black;
+  color: white;
+}
+
+.grid-item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-item7 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.grid-item9 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}

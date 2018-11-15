@@ -1,0 +1,85 @@
+/* Eine Animation wird mit @keyframes begonnen, identifier
+ist der Name/die Bennenung,mit welcher ich die Animation ansprechen kann */
+
+/* Prozentangabe in @keyframes der festgelegten ZEIT */
+
+/* QUADRAT */
+@keyframes moving {
+  0% {
+    left: 0;
+    transform: translateX(0) translateY(0);
+    top:0;
+  }
+  25% {
+    left: 100%;
+    transform: translateX(-100%);
+    top:0;
+  }
+  50% {
+    left: 100%;
+    transform: translateX(-100%) translateY(-100%);
+    top: 100%;
+  }
+  75% {
+    left: 0;
+    transform: translateX(0) translateY(-100%);
+    top: 100%;
+  }
+  100% {
+    left: 0;
+    transform: translateX(0) translateY(0);
+    top: 0;
+  }
+}
+
+.crazy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-color: lightgreen;
+  animation-name: moving;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+/* SPINNER */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: 10px solid lightcoral;
+  border-radius: 50%;
+  border-left: 10px solid transparent;
+  animation: spin 1s cubic-bezier(0, 0, 0, 0.71) 0s infinite;
+}
+
+
+/* 2. Möglichkeit für leeren Bereich in der Border
+.spinner::after
+  content: '';
+  width: 50%;
+  height: 50%;
+  background: blue;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+*/
