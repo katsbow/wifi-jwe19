@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'OpenSans';
+  font-weight: normal;
+}
+
+:root {
+  --screen-max: 1200px;
+  --base-font: 'Montserrat', sans-serif;
+  --base-font2: 'Open_Sans', 'Times New Roman', serif;
+
+  --grey-light: #fefefe;
+  --grey-dark: #525252;
+  --grey: #696969;
+
+  --font-color-light: var(--grey-dark);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Montserrat/Montserrat-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Montserrat/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Montserrat/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Montserrat/Montserrat-Light.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../Open_Sans/OpenSans-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../Open_Sans/OpenSans-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../Open_Sans/OpenSans-Light.ttf);
+    font-weight: lighter;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  margin: 0;
+  color: black;
+}
+
+.reiseziele {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#main-header img {
+  position: relative;
+}
+
+#main-header div.inner-wrapper {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  color: white;
+  max-width: 400px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  nav {
+    margin-top: 40px;
+  }
+
+li {
+  display: inline;
+  padding: 0 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:active, li a:hover {
+  color: red;
+}
+
+.sticky-header {
+  display: flex;
+  height: 100px;
+  margin-left: 200px;
+}
+
+#logo {
+  padding-right: 15%;
+  background: url('../img/logo.png') no-repeat center center;
+  margin-right: 25%;
+  z-index: 10;
+}
