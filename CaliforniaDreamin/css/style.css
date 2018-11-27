@@ -112,10 +112,14 @@ h2 {
   width: 100%;
   text-align: center;
   margin-top: 5%;
+  padding-bottom: 5%;
+  justify-content: center;
 }
 
 #main-header img {
   position: relative;
+  width: 100%;
+  height: auto;
 }
 
 #main-header div.inner-wrapper {
@@ -126,7 +130,7 @@ h2 {
   max-width: 400px;
 }
 
-ul {
+.main-navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -140,17 +144,17 @@ ul {
     margin-top: 40px;
   }
 
-li {
+.main-navigation li {
   display: inline;
   padding: 0 30px;
 }
 
-li a {
+.main-navigation li a {
   text-decoration: none;
   color: black;
 }
 
-li a:active, li a:hover {
+.main-navigation li a:active, li a:hover {
   color: red;
 }
 
@@ -161,7 +165,7 @@ li a:active, li a:hover {
 }
 
 #logo {
-  padding-right: 15%;
+  padding-right: 25%;
   background: url('../img/logo.png') no-repeat center center;
   margin-right: 25%;
   z-index: 10;
@@ -170,9 +174,88 @@ li a:active, li a:hover {
 .teaser-flex {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .teaser-box img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: auto;
 }
+
+.teaser-text {
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.teaser-text a {
+  color: red;
+  text-decoration: underline;
+}
+
+.image-grid {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap
+}
+
+.image-grid a {
+  flex: 1;
+}
+
+.image-grid img {
+  max-width: 100%;
+}
+.image-grid a > img:hover {
+  opacity: 0.5 red;
+}
+
+.footer-top {
+  background: darkgrey;
+  width: 100%;
+  height: auto;
+}
+
+.footer-top .inner-wrapper {
+  display: flex;
+  max-width: 1200px;
+}
+
+.footer-top .inner-wrapper > div,
+.footer-bottom > div {
+  flex: 1;
+}
+
+.footer-top-right,
+.footer-bottom-right {
+  text-align: right;
+}
+
+.footer-top-right ul > li {
+  list-style: none;
+}
+
+.footer-top-right ul > li > a {
+  color: white;
+}
+
+.footer-bottom {
+  display: flex;
+  background: black;
+  color: lightgrey;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 850px) {
+
+  .footer-top {
+    flex: 1;
+    background: darkgrey;
+    width: 100%;
+    height: auto;
+    }
+
+  }
