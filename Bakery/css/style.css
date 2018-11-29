@@ -1,0 +1,109 @@
+/*var*/
+:root {
+    --brown: #D0B085;
+    --grey: #707070;
+    --white: #FFFFFF;
+
+    /*BUTTON VARIABLEN*/
+    --btn-border: solid var(--brown) 2px;
+    --btn-padding: 0.75em 1.2em 0.45em;
+    --btn-margin: 1em auto;
+
+    /*margin*/
+    --margin: 0 15% 0 15%;
+
+    /* Costum Breakpoints*/
+    --min-xs: 480px;
+    --min-sm: 768px;
+    --min-md: 992px;
+    --min-lg: 1280px;
+    --min-xlg: 1600px;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background: var(--white);
+  padding: 10px;
+  position: fixed;
+  left: 20%;
+  right: 20%;
+}
+
+.logo {
+  float: left;
+}
+
+.logo > img {
+  width: 250px;
+  height: 65px;
+  margin-top: 10px;
+}
+
+.nav {
+  float: right;
+  margin-top: 35px;
+}
+
+.nav > a {
+  margin: 15px;
+  text-decoration: none;
+  font-family: 'Josefin Sans';
+  color: var(--grey);
+  font-size: 1.3em;
+}
+
+h2 {
+  font-family: 'Josefin Sans';
+  font-weight: lighter;
+  font-size: 4em;
+  text-transform: uppercase;
+  color: var(--grey);
+  text-align: center;
+}
+
+.sortiment {
+  margin-bottom: 50px;
+}
+
+.sortiment .inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sortiment .inner-wrapper > img {
+  margin: 10px;
+}
+
+.bestellung .inner-wrapper {
+  text-align: center;
+}
+
+.bestellung .inner-wrapper > p {
+  font-family: 'Josefin Sans';
+  font-weight: 600;
+  color: var(--grey);
+  font-size: 1.3em;
+}
+
+.bestellung .inner-wrapper > button {
+  font-family: 'Josefin Sans';
+  color: var(--brown);
+  text-transform: uppercase;
+  font-weight: lighter;
+  border: var(--btn-border);
+  padding: var(--btn-padding);
+  margin: var(--button-margin);
+  width: 450px;
+  height: 80px;
+  font-size: 1.9em;
+  background-color: transparent;
+}
+
+.siegel > img{
+  width: 250px;
+  float: right;
+}
