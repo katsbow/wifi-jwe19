@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+  margin: 10vw;
+}
+
+button {
+  width: 150px;
+  transition: all 1s ease-out;
+  background: lightcoral;
+  color: white;
+  border: 3px solid white;
+  border-radius: 1em;
+  padding: 2em;
+}
+
+button.run {
+  transform: translateY(200px);
+}
+
+button.sending {
+  opacity: .2;
+}
