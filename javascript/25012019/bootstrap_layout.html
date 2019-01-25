@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mein erstes Bootstrap Layout</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary m-2" data-toggle="modal" data-target="#exampleModal">
+    Launch demo Contact Form modal
+  </button> -->
+
+  <!-- Modal -->
+  <!-- <div class="modal face" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form class="form-group" action="index.html" method="post">
+            <div class="p-3 mb-2 bg-light text-dark">
+            <h2>Registrierung</h2></div>
+
+            <div class="form-group">
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Female" value="Female">
+                <label class="form-check-label" for="Female">Female</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Male" value="Male">
+                <label class="form-check-label" for="Male">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Other" value="Other">
+                <label class="form-check-label" for="Other">Other</label>
+              </div>
+
+            </div>
+
+            <div class="form-group m-1 p-3 bg-secondary text-white">
+              <label for="FirstName">First Name</label>
+              <input type="text" name="FirstName" placeholder="First Name" /><br>
+              <label for="LastName">Last Name</label>
+              <input type="text" name="LastName" placeholder="Last Name" />
+            </div>
+
+            <div class="form-group row m-1 p-3 bg-secondary text-white">
+              <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+              <input type="text" class="form-control-plaintext" id="staticEmail" placeholder="email@example.com">
+              </div>
+            </div>
+
+            <div class="form-group m-1 p-3 bg-secondary text-white">
+              <label for="Password">Password</label>
+              <input type="password" name="Password" placeholder="" /><br>
+              <label for="Password2">Repeat Password</label>
+              <input type="password" name="Password2" placeholder="" />
+            </div>
+
+            <div class="form-group m-1 p-3 bg-secondary text-white">
+              <label for="Birthday">Birthday</label>
+              <input type="date" name="birthday" placeholder="" /><br>
+            </div>
+
+            <div class="form-group form-check m-1 p-3 bg-secondary text-white">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Ich habe die AGB gelesen.
+              </label>
+            </div>
+
+            <div class="send m-1 p-3 bg-secondary text-white">
+              <button type="button" name="button">Send</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <script>window.setTimeout(function() {$('#myModal').modal('show')}, 3000);</script>
+
+</body>
+
+</html>
